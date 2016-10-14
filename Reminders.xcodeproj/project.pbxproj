@@ -9,12 +9,36 @@
 /* Begin PBXBuildFile section */
 		22C7B9FD1DA5263500BBECF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C7B9FC1DA5263500BBECF0 /* main.m */; };
 		22C7BA001DA5263500BBECF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C7B9FF1DA5263500BBECF0 /* AppDelegate.m */; };
-		22C7BA031DA5263500BBECF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C7BA021DA5263500BBECF0 /* ViewController.m */; };
 		22C7BA061DA5263500BBECF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C7BA041DA5263500BBECF0 /* Main.storyboard */; };
 		22C7BA081DA5263600BBECF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C7BA071DA5263600BBECF0 /* Assets.xcassets */; };
 		22C7BA0B1DA5263600BBECF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C7BA091DA5263600BBECF0 /* LaunchScreen.storyboard */; };
 		22C7BA161DA5263700BBECF0 /* RemindersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C7BA151DA5263700BBECF0 /* RemindersTests.m */; };
 		22C7BA211DA5263700BBECF0 /* RemindersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C7BA201DA5263700BBECF0 /* RemindersUITests.m */; };
+		22C7BA301DA5273D00BBECF0 /* RemindersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C7BA2F1DA5273D00BBECF0 /* RemindersController.m */; };
+		22C7BA341DA528DD00BBECF0 /* callCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C7BA321DA528DD00BBECF0 /* callCell.m */; };
+		22C7BA351DA528DD00BBECF0 /* callCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C7BA331DA528DD00BBECF0 /* callCell.xib */; };
+		22C7BA391DA528F200BBECF0 /* BirthdayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C7BA371DA528F200BBECF0 /* BirthdayCell.m */; };
+		22C7BA3A1DA528F200BBECF0 /* BirthdayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C7BA381DA528F200BBECF0 /* BirthdayCell.xib */; };
+		22C7BA411DA52AFB00BBECF0 /* ReminderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C7BA3F1DA52AFB00BBECF0 /* ReminderListCell.m */; };
+		22C7BA421DA52AFB00BBECF0 /* ReminderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C7BA401DA52AFB00BBECF0 /* ReminderListCell.xib */; };
+		22C7BA461DA52CD500BBECF0 /* remindersDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C7BA441DA52CD500BBECF0 /* remindersDataCell.m */; };
+		22C7BA471DA52CD500BBECF0 /* remindersDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C7BA451DA52CD500BBECF0 /* remindersDataCell.xib */; };
+		22CD30B51DA7AA6500C14226 /* messageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CD30B31DA7AA6500C14226 /* messageCell.m */; };
+		22CD30B61DA7AA6500C14226 /* messageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CD30B41DA7AA6500C14226 /* messageCell.xib */; };
+		22DD7B301DA633CF00BA3A66 /* wakeUpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DD7B2E1DA633CF00BA3A66 /* wakeUpCell.m */; };
+		22DD7B311DA633CF00BA3A66 /* wakeUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DD7B2F1DA633CF00BA3A66 /* wakeUpCell.xib */; };
+		22DD7B351DA633F000BA3A66 /* meetingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DD7B331DA633F000BA3A66 /* meetingCell.m */; };
+		22DD7B361DA633F000BA3A66 /* meetingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DD7B341DA633F000BA3A66 /* meetingCell.xib */; };
+		22DD7B3C1DA6355900BA3A66 /* takeMedicineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DD7B3A1DA6355900BA3A66 /* takeMedicineCell.m */; };
+		22DD7B3D1DA6355900BA3A66 /* takeMedicineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DD7B3B1DA6355900BA3A66 /* takeMedicineCell.xib */; };
+		22DD7B411DA6357000BA3A66 /* DrinkWaterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DD7B3F1DA6357000BA3A66 /* DrinkWaterCell.m */; };
+		22DD7B421DA6357000BA3A66 /* DrinkWaterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DD7B401DA6357000BA3A66 /* DrinkWaterCell.xib */; };
+		22F40BA31DAF8A5500AD4EA9 /* ToDoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F40BA11DAF8A5500AD4EA9 /* ToDoList.m */; };
+		22F40BA41DAF8A5500AD4EA9 /* ToDoList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F40BA21DAF8A5500AD4EA9 /* ToDoList.xib */; };
+		22F40BA61DAF933B00AD4EA9 /* Speech.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F40BA51DAF933B00AD4EA9 /* Speech.png */; };
+		22F40BA81DAF94FE00AD4EA9 /* native.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F40BA71DAF94FE00AD4EA9 /* native.png */; };
+		22F40BAA1DAF957B00AD4EA9 /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22F40BA91DAF957B00AD4EA9 /* frame.jpg */; };
+		73988EB6ADDA8BA525335EB4 /* libPods-Reminders.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C43BEB603A3FE39FF2B4ECEA /* libPods-Reminders.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +63,6 @@
 		22C7B9FC1DA5263500BBECF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22C7B9FE1DA5263500BBECF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22C7B9FF1DA5263500BBECF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		22C7BA011DA5263500BBECF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		22C7BA021DA5263500BBECF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		22C7BA051DA5263500BBECF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22C7BA071DA5263600BBECF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22C7BA0A1DA5263600BBECF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +73,44 @@
 		22C7BA1C1DA5263700BBECF0 /* RemindersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemindersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C7BA201DA5263700BBECF0 /* RemindersUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemindersUITests.m; sourceTree = "<group>"; };
 		22C7BA221DA5263700BBECF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22C7BA2E1DA5273D00BBECF0 /* RemindersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindersController.h; sourceTree = SOURCE_ROOT; };
+		22C7BA2F1DA5273D00BBECF0 /* RemindersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindersController.m; sourceTree = SOURCE_ROOT; };
+		22C7BA311DA528DD00BBECF0 /* callCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callCell.h; sourceTree = "<group>"; };
+		22C7BA321DA528DD00BBECF0 /* callCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = callCell.m; sourceTree = "<group>"; };
+		22C7BA331DA528DD00BBECF0 /* callCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = callCell.xib; sourceTree = "<group>"; };
+		22C7BA361DA528F200BBECF0 /* BirthdayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayCell.h; sourceTree = "<group>"; };
+		22C7BA371DA528F200BBECF0 /* BirthdayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayCell.m; sourceTree = "<group>"; };
+		22C7BA381DA528F200BBECF0 /* BirthdayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BirthdayCell.xib; sourceTree = "<group>"; };
+		22C7BA3E1DA52AFB00BBECF0 /* ReminderListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderListCell.h; sourceTree = "<group>"; };
+		22C7BA3F1DA52AFB00BBECF0 /* ReminderListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderListCell.m; sourceTree = "<group>"; };
+		22C7BA401DA52AFB00BBECF0 /* ReminderListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderListCell.xib; sourceTree = "<group>"; };
+		22C7BA431DA52CD500BBECF0 /* remindersDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remindersDataCell.h; sourceTree = "<group>"; };
+		22C7BA441DA52CD500BBECF0 /* remindersDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = remindersDataCell.m; sourceTree = "<group>"; };
+		22C7BA451DA52CD500BBECF0 /* remindersDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = remindersDataCell.xib; sourceTree = "<group>"; };
+		22CD30B21DA7AA6500C14226 /* messageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageCell.h; sourceTree = "<group>"; };
+		22CD30B31DA7AA6500C14226 /* messageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messageCell.m; sourceTree = "<group>"; };
+		22CD30B41DA7AA6500C14226 /* messageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = messageCell.xib; sourceTree = "<group>"; };
+		22DD7B2D1DA633CF00BA3A66 /* wakeUpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wakeUpCell.h; sourceTree = "<group>"; };
+		22DD7B2E1DA633CF00BA3A66 /* wakeUpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wakeUpCell.m; sourceTree = "<group>"; };
+		22DD7B2F1DA633CF00BA3A66 /* wakeUpCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wakeUpCell.xib; sourceTree = "<group>"; };
+		22DD7B321DA633F000BA3A66 /* meetingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meetingCell.h; sourceTree = "<group>"; };
+		22DD7B331DA633F000BA3A66 /* meetingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = meetingCell.m; sourceTree = "<group>"; };
+		22DD7B341DA633F000BA3A66 /* meetingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = meetingCell.xib; sourceTree = "<group>"; };
+		22DD7B391DA6355900BA3A66 /* takeMedicineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = takeMedicineCell.h; sourceTree = "<group>"; };
+		22DD7B3A1DA6355900BA3A66 /* takeMedicineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = takeMedicineCell.m; sourceTree = "<group>"; };
+		22DD7B3B1DA6355900BA3A66 /* takeMedicineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = takeMedicineCell.xib; sourceTree = "<group>"; };
+		22DD7B3E1DA6357000BA3A66 /* DrinkWaterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkWaterCell.h; sourceTree = "<group>"; };
+		22DD7B3F1DA6357000BA3A66 /* DrinkWaterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkWaterCell.m; sourceTree = "<group>"; };
+		22DD7B401DA6357000BA3A66 /* DrinkWaterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrinkWaterCell.xib; sourceTree = "<group>"; };
+		22F40BA01DAF8A5500AD4EA9 /* ToDoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoList.h; sourceTree = "<group>"; };
+		22F40BA11DAF8A5500AD4EA9 /* ToDoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoList.m; sourceTree = "<group>"; };
+		22F40BA21DAF8A5500AD4EA9 /* ToDoList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToDoList.xib; sourceTree = "<group>"; };
+		22F40BA51DAF933B00AD4EA9 /* Speech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Speech.png; sourceTree = "<group>"; };
+		22F40BA71DAF94FE00AD4EA9 /* native.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = native.png; sourceTree = "<group>"; };
+		22F40BA91DAF957B00AD4EA9 /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
+		5CF73DA98B644DFB715FA33E /* Pods-Reminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reminders/Pods-Reminders.debug.xcconfig"; sourceTree = "<group>"; };
+		C1561B9246BE5AFCD2DB5327 /* Pods-Reminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reminders/Pods-Reminders.release.xcconfig"; sourceTree = "<group>"; };
+		C43BEB603A3FE39FF2B4ECEA /* libPods-Reminders.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reminders.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73988EB6ADDA8BA525335EB4 /* libPods-Reminders.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +142,20 @@
 		22C7B9EF1DA5263000BBECF0 = {
 			isa = PBXGroup;
 			children = (
+				22CD30B11DA7AA2E00C14226 /* messageCell */,
+				22DD7B381DA6348000BA3A66 /* TakeMedicine */,
+				22DD7B371DA6347800BA3A66 /* DrinkWater */,
+				22DD7B2C1DA632F700BA3A66 /* Reminders */,
+				22DD7B2B1DA632EE00BA3A66 /* meeting */,
+				22DD7B2A1DA632E500BA3A66 /* wakeUp */,
+				22DD7B291DA632D900BA3A66 /* brithday */,
+				22DD7B281DA632C600BA3A66 /* call */,
 				22C7B9FA1DA5263400BBECF0 /* Reminders */,
 				22C7BA141DA5263700BBECF0 /* RemindersTests */,
 				22C7BA1F1DA5263700BBECF0 /* RemindersUITests */,
 				22C7B9F91DA5263200BBECF0 /* Products */,
+				5CBF0255BF7C2D4AEC228EC5 /* Pods */,
+				A823CAE543F90863D976DCA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +172,14 @@
 		22C7B9FA1DA5263400BBECF0 /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
+				22F40BA91DAF957B00AD4EA9 /* frame.jpg */,
 				22C7B9FE1DA5263500BBECF0 /* AppDelegate.h */,
 				22C7B9FF1DA5263500BBECF0 /* AppDelegate.m */,
-				22C7BA011DA5263500BBECF0 /* ViewController.h */,
-				22C7BA021DA5263500BBECF0 /* ViewController.m */,
+				22C7BA2E1DA5273D00BBECF0 /* RemindersController.h */,
+				22C7BA2F1DA5273D00BBECF0 /* RemindersController.m */,
 				22C7BA041DA5263500BBECF0 /* Main.storyboard */,
+				22F40BA71DAF94FE00AD4EA9 /* native.png */,
+				22F40BA51DAF933B00AD4EA9 /* Speech.png */,
 				22C7BA071DA5263600BBECF0 /* Assets.xcassets */,
 				22C7BA091DA5263600BBECF0 /* LaunchScreen.storyboard */,
 				22C7BA0C1DA5263600BBECF0 /* Info.plist */,
@@ -140,6 +214,109 @@
 			path = RemindersUITests;
 			sourceTree = "<group>";
 		};
+		22CD30B11DA7AA2E00C14226 /* messageCell */ = {
+			isa = PBXGroup;
+			children = (
+				22CD30B21DA7AA6500C14226 /* messageCell.h */,
+				22CD30B31DA7AA6500C14226 /* messageCell.m */,
+				22CD30B41DA7AA6500C14226 /* messageCell.xib */,
+				22F40BA01DAF8A5500AD4EA9 /* ToDoList.h */,
+				22F40BA11DAF8A5500AD4EA9 /* ToDoList.m */,
+				22F40BA21DAF8A5500AD4EA9 /* ToDoList.xib */,
+			);
+			name = messageCell;
+			sourceTree = "<group>";
+		};
+		22DD7B281DA632C600BA3A66 /* call */ = {
+			isa = PBXGroup;
+			children = (
+				22C7BA311DA528DD00BBECF0 /* callCell.h */,
+				22C7BA321DA528DD00BBECF0 /* callCell.m */,
+				22C7BA331DA528DD00BBECF0 /* callCell.xib */,
+			);
+			name = call;
+			sourceTree = "<group>";
+		};
+		22DD7B291DA632D900BA3A66 /* brithday */ = {
+			isa = PBXGroup;
+			children = (
+				22C7BA361DA528F200BBECF0 /* BirthdayCell.h */,
+				22C7BA371DA528F200BBECF0 /* BirthdayCell.m */,
+				22C7BA381DA528F200BBECF0 /* BirthdayCell.xib */,
+			);
+			name = brithday;
+			sourceTree = "<group>";
+		};
+		22DD7B2A1DA632E500BA3A66 /* wakeUp */ = {
+			isa = PBXGroup;
+			children = (
+				22DD7B2D1DA633CF00BA3A66 /* wakeUpCell.h */,
+				22DD7B2E1DA633CF00BA3A66 /* wakeUpCell.m */,
+				22DD7B2F1DA633CF00BA3A66 /* wakeUpCell.xib */,
+			);
+			name = wakeUp;
+			sourceTree = "<group>";
+		};
+		22DD7B2B1DA632EE00BA3A66 /* meeting */ = {
+			isa = PBXGroup;
+			children = (
+				22DD7B321DA633F000BA3A66 /* meetingCell.h */,
+				22DD7B331DA633F000BA3A66 /* meetingCell.m */,
+				22DD7B341DA633F000BA3A66 /* meetingCell.xib */,
+			);
+			name = meeting;
+			sourceTree = "<group>";
+		};
+		22DD7B2C1DA632F700BA3A66 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				22C7BA431DA52CD500BBECF0 /* remindersDataCell.h */,
+				22C7BA441DA52CD500BBECF0 /* remindersDataCell.m */,
+				22C7BA451DA52CD500BBECF0 /* remindersDataCell.xib */,
+				22C7BA3E1DA52AFB00BBECF0 /* ReminderListCell.h */,
+				22C7BA3F1DA52AFB00BBECF0 /* ReminderListCell.m */,
+				22C7BA401DA52AFB00BBECF0 /* ReminderListCell.xib */,
+			);
+			name = Reminders;
+			sourceTree = "<group>";
+		};
+		22DD7B371DA6347800BA3A66 /* DrinkWater */ = {
+			isa = PBXGroup;
+			children = (
+				22DD7B3E1DA6357000BA3A66 /* DrinkWaterCell.h */,
+				22DD7B3F1DA6357000BA3A66 /* DrinkWaterCell.m */,
+				22DD7B401DA6357000BA3A66 /* DrinkWaterCell.xib */,
+			);
+			name = DrinkWater;
+			sourceTree = "<group>";
+		};
+		22DD7B381DA6348000BA3A66 /* TakeMedicine */ = {
+			isa = PBXGroup;
+			children = (
+				22DD7B391DA6355900BA3A66 /* takeMedicineCell.h */,
+				22DD7B3A1DA6355900BA3A66 /* takeMedicineCell.m */,
+				22DD7B3B1DA6355900BA3A66 /* takeMedicineCell.xib */,
+			);
+			name = TakeMedicine;
+			sourceTree = "<group>";
+		};
+		5CBF0255BF7C2D4AEC228EC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CF73DA98B644DFB715FA33E /* Pods-Reminders.debug.xcconfig */,
+				C1561B9246BE5AFCD2DB5327 /* Pods-Reminders.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A823CAE543F90863D976DCA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C43BEB603A3FE39FF2B4ECEA /* libPods-Reminders.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +324,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22C7BA251DA5263700BBECF0 /* Build configuration list for PBXNativeTarget "Reminders" */;
 			buildPhases = (
+				982757437546C2695AC1F001 /* [CP] Check Pods Manifest.lock */,
 				22C7B9F41DA5263200BBECF0 /* Sources */,
 				22C7B9F51DA5263200BBECF0 /* Frameworks */,
 				22C7B9F61DA5263200BBECF0 /* Resources */,
+				52B87C084DD22B6BD9FCB3DB /* [CP] Embed Pods Frameworks */,
+				A3EA7A2170E6F00778E03EED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,8 +424,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				22C7BA0B1DA5263600BBECF0 /* LaunchScreen.storyboard in Resources */,
+				22C7BA351DA528DD00BBECF0 /* callCell.xib in Resources */,
 				22C7BA081DA5263600BBECF0 /* Assets.xcassets in Resources */,
+				22F40BAA1DAF957B00AD4EA9 /* frame.jpg in Resources */,
+				22F40BA61DAF933B00AD4EA9 /* Speech.png in Resources */,
+				22DD7B421DA6357000BA3A66 /* DrinkWaterCell.xib in Resources */,
+				22F40BA81DAF94FE00AD4EA9 /* native.png in Resources */,
+				22C7BA421DA52AFB00BBECF0 /* ReminderListCell.xib in Resources */,
+				22CD30B61DA7AA6500C14226 /* messageCell.xib in Resources */,
+				22F40BA41DAF8A5500AD4EA9 /* ToDoList.xib in Resources */,
+				22DD7B311DA633CF00BA3A66 /* wakeUpCell.xib in Resources */,
 				22C7BA061DA5263500BBECF0 /* Main.storyboard in Resources */,
+				22C7BA471DA52CD500BBECF0 /* remindersDataCell.xib in Resources */,
+				22DD7B361DA633F000BA3A66 /* meetingCell.xib in Resources */,
+				22DD7B3D1DA6355900BA3A66 /* takeMedicineCell.xib in Resources */,
+				22C7BA3A1DA528F200BBECF0 /* BirthdayCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +458,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52B87C084DD22B6BD9FCB3DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reminders/Pods-Reminders-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		982757437546C2695AC1F001 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3EA7A2170E6F00778E03EED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reminders/Pods-Reminders-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22C7B9F41DA5263200BBECF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22C7BA031DA5263500BBECF0 /* ViewController.m in Sources */,
+				22DD7B3C1DA6355900BA3A66 /* takeMedicineCell.m in Sources */,
+				22C7BA391DA528F200BBECF0 /* BirthdayCell.m in Sources */,
 				22C7BA001DA5263500BBECF0 /* AppDelegate.m in Sources */,
+				22DD7B411DA6357000BA3A66 /* DrinkWaterCell.m in Sources */,
+				22C7BA341DA528DD00BBECF0 /* callCell.m in Sources */,
+				22F40BA31DAF8A5500AD4EA9 /* ToDoList.m in Sources */,
+				22CD30B51DA7AA6500C14226 /* messageCell.m in Sources */,
+				22C7BA411DA52AFB00BBECF0 /* ReminderListCell.m in Sources */,
+				22DD7B301DA633CF00BA3A66 /* wakeUpCell.m in Sources */,
 				22C7B9FD1DA5263500BBECF0 /* main.m in Sources */,
+				22DD7B351DA633F000BA3A66 /* meetingCell.m in Sources */,
+				22C7BA301DA5273D00BBECF0 /* RemindersController.m in Sources */,
+				22C7BA461DA52CD500BBECF0 /* remindersDataCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +615,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +653,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -411,9 +662,11 @@
 		};
 		22C7BA261DA5263700BBECF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF73DA98B644DFB715FA33E /* Pods-Reminders.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Reminders/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miimobileapp.Reminders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,9 +675,11 @@
 		};
 		22C7BA271DA5263700BBECF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1561B9246BE5AFCD2DB5327 /* Pods-Reminders.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Reminders/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miimobileapp.Reminders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +751,7 @@
 				22C7BA271DA5263700BBECF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22C7BA281DA5263700BBECF0 /* Build configuration list for PBXNativeTarget "RemindersTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +760,7 @@
 				22C7BA2A1DA5263700BBECF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22C7BA2B1DA5263700BBECF0 /* Build configuration list for PBXNativeTarget "RemindersUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +769,7 @@
 				22C7BA2D1DA5263700BBECF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

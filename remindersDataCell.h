@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  remindersDataCell.h
 //  Reminders
 //
 //  Created by SoftBunch  on 10/5/16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface remindersDataCell : UITableViewCell
 
+@property(nonatomic, weak)IBOutlet UILabel *Name;
 
 @end
-

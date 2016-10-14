@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idTodo" rowHeight="253" id="KGk-i7-Jjw" customClass="ToDoList">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="253"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="252"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add New Task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEH-qa-Zrz">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please give us some details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qlp-8q-i9a">
+                        <rect key="frame" x="8" y="42" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbO-cX-x8b">
+                        <rect key="frame" x="8" y="115" width="304" height="30"/>
+                        <state key="normal" title="Date"/>
+                        <connections>
+                            <action selector="touchedButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vsV-Dz-TJj"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydC-GQ-FRf">
+                        <rect key="frame" x="8" y="159" width="304" height="30"/>
+                        <state key="normal" title="Time"/>
+                        <connections>
+                            <action selector="timeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZQr-og-a5w"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aO9-AK-3Yt">
+                        <rect key="frame" x="222" y="216" width="73" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="qxC-kt-9pR"/>
+                        </constraints>
+                        <state key="normal" title="send"/>
+                        <connections>
+                            <action selector="sendButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iL9-NA-QzN"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jkB-Bl-FJW">
+                        <rect key="frame" x="8" y="77" width="304" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aO9-AK-3Yt" firstAttribute="top" secondItem="ydC-GQ-FRf" secondAttribute="bottom" constant="27" id="APW-2y-Xw8"/>
+                    <constraint firstItem="WbO-cX-x8b" firstAttribute="top" secondItem="jkB-Bl-FJW" secondAttribute="bottom" constant="8" symbolic="YES" id="BFR-Wm-P1g"/>
+                    <constraint firstItem="Qlp-8q-i9a" firstAttribute="top" secondItem="UEH-qa-Zrz" secondAttribute="bottom" constant="13" id="D2b-8s-mHc"/>
+                    <constraint firstItem="ydC-GQ-FRf" firstAttribute="top" secondItem="WbO-cX-x8b" secondAttribute="bottom" constant="14" id="IZO-UD-cWi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aO9-AK-3Yt" secondAttribute="trailing" constant="25" id="Rqc-9m-uI5"/>
+                    <constraint firstItem="WbO-cX-x8b" firstAttribute="trailing" secondItem="ydC-GQ-FRf" secondAttribute="trailing" id="Va3-nq-tB9"/>
+                    <constraint firstItem="jkB-Bl-FJW" firstAttribute="leading" secondItem="WbO-cX-x8b" secondAttribute="leading" id="Vqi-Rl-pzY"/>
+                    <constraint firstItem="UEH-qa-Zrz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fIj-7B-y9e"/>
+                    <constraint firstItem="jkB-Bl-FJW" firstAttribute="trailing" secondItem="WbO-cX-x8b" secondAttribute="trailing" id="gdt-CP-IND"/>
+                    <constraint firstItem="Qlp-8q-i9a" firstAttribute="trailing" secondItem="jkB-Bl-FJW" secondAttribute="trailing" id="i3p-vw-KgN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UEH-qa-Zrz" secondAttribute="trailing" constant="8" id="iFt-Pn-4Ng"/>
+                    <constraint firstItem="UEH-qa-Zrz" firstAttribute="leading" secondItem="Qlp-8q-i9a" secondAttribute="leading" id="joc-AI-ScR"/>
+                    <constraint firstItem="WbO-cX-x8b" firstAttribute="leading" secondItem="ydC-GQ-FRf" secondAttribute="leading" id="mT6-Ue-O3X"/>
+                    <constraint firstItem="UEH-qa-Zrz" firstAttribute="trailing" secondItem="Qlp-8q-i9a" secondAttribute="trailing" id="nSZ-2Y-1bb"/>
+                    <constraint firstItem="Qlp-8q-i9a" firstAttribute="leading" secondItem="jkB-Bl-FJW" secondAttribute="leading" id="o2E-N7-59W"/>
+                    <constraint firstItem="jkB-Bl-FJW" firstAttribute="top" secondItem="Qlp-8q-i9a" secondAttribute="bottom" constant="14" id="o9z-sN-Wp9"/>
+                    <constraint firstItem="UEH-qa-Zrz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="sfV-0I-5C1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="TimeButton" destination="ydC-GQ-FRf" id="i7x-Lg-yVh"/>
+                <outlet property="dateButton" destination="WbO-cX-x8b" id="iOe-sr-VR4"/>
+                <outlet property="nameField" destination="jkB-Bl-FJW" id="SZ1-6o-IsJ"/>
+            </connections>
+            <point key="canvasLocation" x="385" y="325.5"/>
+        </tableViewCell>
+    </objects>
+</document>
