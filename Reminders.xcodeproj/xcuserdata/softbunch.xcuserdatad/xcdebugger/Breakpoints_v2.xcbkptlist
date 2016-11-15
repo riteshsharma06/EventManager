@@ -10,13 +10,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RemindersController.m"
-            timestampString = "497619852.226614"
+            timestampString = "498384828.522555"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "@interface RemindersController()"
             landmarkType = "2">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RemindersController flatDatePicker]"
+                  moduleName = "Reminders"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/softbunch/Documents/Ritesh/Personal/EventManager/Reminders/RemindersController.m"
+                  timestampString = "498733477.940345"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RemindersController setFlatDatePicker:]"
+                  moduleName = "Reminders"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/softbunch/Documents/Ritesh/Personal/EventManager/Reminders/RemindersController.m"
+                  timestampString = "498733477.940481"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

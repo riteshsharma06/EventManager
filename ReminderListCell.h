@@ -12,7 +12,9 @@
 {
     NSMutableArray *arrList;
     UINib *reminderNIB;
+    NSMutableArray *arrLogo;
 }
+@property (weak, nonatomic) IBOutlet UIView *myView;
 
 @property(nonatomic,weak)IBOutlet UITableView *table;
 @end

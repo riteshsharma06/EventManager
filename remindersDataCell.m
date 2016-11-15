@@ -12,8 +12,15 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self.Name.layer setBorderColor:[UIColor blueColor].CGColor];
+    
+    [self.Name.layer setCornerRadius:10.0f];
+    [self.Name.layer setBorderColor:[UIColor whiteColor].CGColor];
     [self.Name.layer setBorderWidth:1.0f];
+    
+    
+    [self.ImgLogo.layer setCornerRadius:10.0f];
+    [self.ImgLogo.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [self.ImgLogo.layer setBorderWidth:1.0f];
     // Initialization code
 }
 

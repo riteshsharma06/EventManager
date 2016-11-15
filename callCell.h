@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface callCell : UITableViewCell<UITextFieldDelegate>
+@interface callCell : UITableViewCell<UITextFieldDelegate> {
+    BOOL error;
+}
 @property (nonatomic, retain) NSDate * curDate;
 @property (nonatomic, retain) NSDateFormatter * formatter;
 - (IBAction)touchedButton:(id)sender;
@@ -23,4 +25,5 @@
 @property (weak, nonatomic) IBOutlet UIView *viewNew;
 
 - (IBAction)timeButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *SendLabel;
 @end

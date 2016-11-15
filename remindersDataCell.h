@@ -11,5 +11,6 @@
 @interface remindersDataCell : UITableViewCell
 
 @property(nonatomic, weak)IBOutlet UILabel *Name;
+@property (weak, nonatomic) IBOutlet UIImageView *ImgLogo;
 
 @end

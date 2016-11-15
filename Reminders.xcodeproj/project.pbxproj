@@ -25,6 +25,13 @@
 		22C7BA471DA52CD500BBECF0 /* remindersDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C7BA451DA52CD500BBECF0 /* remindersDataCell.xib */; };
 		22CD30B51DA7AA6500C14226 /* messageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CD30B31DA7AA6500C14226 /* messageCell.m */; };
 		22CD30B61DA7AA6500C14226 /* messageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CD30B41DA7AA6500C14226 /* messageCell.xib */; };
+		22D478B51DB0D43300CBD961 /* birthday.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D478AE1DB0D43200CBD961 /* birthday.png */; };
+		22D478B61DB0D43300CBD961 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D478AF1DB0D43200CBD961 /* call.png */; };
+		22D478B71DB0D43300CBD961 /* drinkwater.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D478B01DB0D43200CBD961 /* drinkwater.png */; };
+		22D478B81DB0D43300CBD961 /* medicine.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D478B11DB0D43200CBD961 /* medicine.png */; };
+		22D478B91DB0D43300CBD961 /* meeting.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D478B21DB0D43200CBD961 /* meeting.png */; };
+		22D478BA1DB0D43300CBD961 /* todolist.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D478B31DB0D43200CBD961 /* todolist.png */; };
+		22D478BB1DB0D43300CBD961 /* wakeup.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D478B41DB0D43200CBD961 /* wakeup.png */; };
 		22DD7B301DA633CF00BA3A66 /* wakeUpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DD7B2E1DA633CF00BA3A66 /* wakeUpCell.m */; };
 		22DD7B311DA633CF00BA3A66 /* wakeUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22DD7B2F1DA633CF00BA3A66 /* wakeUpCell.xib */; };
 		22DD7B351DA633F000BA3A66 /* meetingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DD7B331DA633F000BA3A66 /* meetingCell.m */; };
@@ -38,6 +45,12 @@
 		22F40BA61DAF933B00AD4EA9 /* Speech.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F40BA51DAF933B00AD4EA9 /* Speech.png */; };
 		22F40BA81DAF94FE00AD4EA9 /* native.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F40BA71DAF94FE00AD4EA9 /* native.png */; };
 		22F40BAA1DAF957B00AD4EA9 /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22F40BA91DAF957B00AD4EA9 /* frame.jpg */; };
+		22FA83741DB4BED0004590D2 /* FlatDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FA83731DB4BED0004590D2 /* FlatDatePicker.m */; };
+		22FA83771DB4CD21004590D2 /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FA83761DB4CD21004590D2 /* RMViewController.m */; };
+		22FA837C1DB4CF0A004590D2 /* FlatDatePicker-Icon-Close.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FA83781DB4CF0A004590D2 /* FlatDatePicker-Icon-Close.png */; };
+		22FA837D1DB4CF0A004590D2 /* FlatDatePicker-Icon-Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FA83791DB4CF0A004590D2 /* FlatDatePicker-Icon-Check.png */; };
+		22FA837E1DB4CF0A004590D2 /* FlatDatePicker-Icon-Check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FA837A1DB4CF0A004590D2 /* FlatDatePicker-Icon-Check@2x.png */; };
+		22FA837F1DB4CF0A004590D2 /* FlatDatePicker-Icon-Close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22FA837B1DB4CF0A004590D2 /* FlatDatePicker-Icon-Close@2x.png */; };
 		73988EB6ADDA8BA525335EB4 /* libPods-Reminders.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C43BEB603A3FE39FF2B4ECEA /* libPods-Reminders.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +103,13 @@
 		22CD30B21DA7AA6500C14226 /* messageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messageCell.h; sourceTree = "<group>"; };
 		22CD30B31DA7AA6500C14226 /* messageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = messageCell.m; sourceTree = "<group>"; };
 		22CD30B41DA7AA6500C14226 /* messageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = messageCell.xib; sourceTree = "<group>"; };
+		22D478AE1DB0D43200CBD961 /* birthday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birthday.png; sourceTree = "<group>"; };
+		22D478AF1DB0D43200CBD961 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
+		22D478B01DB0D43200CBD961 /* drinkwater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinkwater.png; sourceTree = "<group>"; };
+		22D478B11DB0D43200CBD961 /* medicine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medicine.png; sourceTree = "<group>"; };
+		22D478B21DB0D43200CBD961 /* meeting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meeting.png; sourceTree = "<group>"; };
+		22D478B31DB0D43200CBD961 /* todolist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todolist.png; sourceTree = "<group>"; };
+		22D478B41DB0D43200CBD961 /* wakeup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wakeup.png; sourceTree = "<group>"; };
 		22DD7B2D1DA633CF00BA3A66 /* wakeUpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wakeUpCell.h; sourceTree = "<group>"; };
 		22DD7B2E1DA633CF00BA3A66 /* wakeUpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wakeUpCell.m; sourceTree = "<group>"; };
 		22DD7B2F1DA633CF00BA3A66 /* wakeUpCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = wakeUpCell.xib; sourceTree = "<group>"; };
@@ -108,6 +128,14 @@
 		22F40BA51DAF933B00AD4EA9 /* Speech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Speech.png; sourceTree = "<group>"; };
 		22F40BA71DAF94FE00AD4EA9 /* native.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = native.png; sourceTree = "<group>"; };
 		22F40BA91DAF957B00AD4EA9 /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
+		22FA83721DB4BED0004590D2 /* FlatDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatDatePicker.h; sourceTree = "<group>"; };
+		22FA83731DB4BED0004590D2 /* FlatDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatDatePicker.m; sourceTree = "<group>"; };
+		22FA83751DB4CD21004590D2 /* RMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMViewController.h; sourceTree = "<group>"; };
+		22FA83761DB4CD21004590D2 /* RMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMViewController.m; sourceTree = "<group>"; };
+		22FA83781DB4CF0A004590D2 /* FlatDatePicker-Icon-Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Close.png"; sourceTree = "<group>"; };
+		22FA83791DB4CF0A004590D2 /* FlatDatePicker-Icon-Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Check.png"; sourceTree = "<group>"; };
+		22FA837A1DB4CF0A004590D2 /* FlatDatePicker-Icon-Check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Check@2x.png"; sourceTree = "<group>"; };
+		22FA837B1DB4CF0A004590D2 /* FlatDatePicker-Icon-Close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FlatDatePicker-Icon-Close@2x.png"; sourceTree = "<group>"; };
 		5CF73DA98B644DFB715FA33E /* Pods-Reminders.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reminders.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reminders/Pods-Reminders.debug.xcconfig"; sourceTree = "<group>"; };
 		C1561B9246BE5AFCD2DB5327 /* Pods-Reminders.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reminders.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reminders/Pods-Reminders.release.xcconfig"; sourceTree = "<group>"; };
 		C43BEB603A3FE39FF2B4ECEA /* libPods-Reminders.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reminders.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +170,7 @@
 		22C7B9EF1DA5263000BBECF0 = {
 			isa = PBXGroup;
 			children = (
+				22D478BC1DB0F95500CBD961 /* toDoList */,
 				22CD30B11DA7AA2E00C14226 /* messageCell */,
 				22DD7B381DA6348000BA3A66 /* TakeMedicine */,
 				22DD7B371DA6347800BA3A66 /* DrinkWater */,
@@ -178,12 +207,20 @@
 				22C7BA2E1DA5273D00BBECF0 /* RemindersController.h */,
 				22C7BA2F1DA5273D00BBECF0 /* RemindersController.m */,
 				22C7BA041DA5263500BBECF0 /* Main.storyboard */,
+				22FA83721DB4BED0004590D2 /* FlatDatePicker.h */,
+				22FA83731DB4BED0004590D2 /* FlatDatePicker.m */,
 				22F40BA71DAF94FE00AD4EA9 /* native.png */,
 				22F40BA51DAF933B00AD4EA9 /* Speech.png */,
+				22FA83781DB4CF0A004590D2 /* FlatDatePicker-Icon-Close.png */,
+				22FA83791DB4CF0A004590D2 /* FlatDatePicker-Icon-Check.png */,
+				22FA837A1DB4CF0A004590D2 /* FlatDatePicker-Icon-Check@2x.png */,
+				22FA837B1DB4CF0A004590D2 /* FlatDatePicker-Icon-Close@2x.png */,
 				22C7BA071DA5263600BBECF0 /* Assets.xcassets */,
 				22C7BA091DA5263600BBECF0 /* LaunchScreen.storyboard */,
 				22C7BA0C1DA5263600BBECF0 /* Info.plist */,
 				22C7B9FB1DA5263500BBECF0 /* Supporting Files */,
+				22FA83751DB4CD21004590D2 /* RMViewController.h */,
+				22FA83761DB4CD21004590D2 /* RMViewController.m */,
 			);
 			path = Reminders;
 			sourceTree = "<group>";
@@ -220,11 +257,18 @@
 				22CD30B21DA7AA6500C14226 /* messageCell.h */,
 				22CD30B31DA7AA6500C14226 /* messageCell.m */,
 				22CD30B41DA7AA6500C14226 /* messageCell.xib */,
+			);
+			name = messageCell;
+			sourceTree = "<group>";
+		};
+		22D478BC1DB0F95500CBD961 /* toDoList */ = {
+			isa = PBXGroup;
+			children = (
 				22F40BA01DAF8A5500AD4EA9 /* ToDoList.h */,
 				22F40BA11DAF8A5500AD4EA9 /* ToDoList.m */,
 				22F40BA21DAF8A5500AD4EA9 /* ToDoList.xib */,
 			);
-			name = messageCell;
+			name = toDoList;
 			sourceTree = "<group>";
 		};
 		22DD7B281DA632C600BA3A66 /* call */ = {
@@ -276,6 +320,13 @@
 				22C7BA3E1DA52AFB00BBECF0 /* ReminderListCell.h */,
 				22C7BA3F1DA52AFB00BBECF0 /* ReminderListCell.m */,
 				22C7BA401DA52AFB00BBECF0 /* ReminderListCell.xib */,
+				22D478AE1DB0D43200CBD961 /* birthday.png */,
+				22D478AF1DB0D43200CBD961 /* call.png */,
+				22D478B01DB0D43200CBD961 /* drinkwater.png */,
+				22D478B11DB0D43200CBD961 /* medicine.png */,
+				22D478B21DB0D43200CBD961 /* meeting.png */,
+				22D478B31DB0D43200CBD961 /* todolist.png */,
+				22D478B41DB0D43200CBD961 /* wakeup.png */,
 			);
 			name = Reminders;
 			sourceTree = "<group>";
@@ -425,18 +476,29 @@
 			files = (
 				22C7BA0B1DA5263600BBECF0 /* LaunchScreen.storyboard in Resources */,
 				22C7BA351DA528DD00BBECF0 /* callCell.xib in Resources */,
+				22D478B71DB0D43300CBD961 /* drinkwater.png in Resources */,
 				22C7BA081DA5263600BBECF0 /* Assets.xcassets in Resources */,
+				22FA837D1DB4CF0A004590D2 /* FlatDatePicker-Icon-Check.png in Resources */,
+				22FA837C1DB4CF0A004590D2 /* FlatDatePicker-Icon-Close.png in Resources */,
 				22F40BAA1DAF957B00AD4EA9 /* frame.jpg in Resources */,
+				22D478B51DB0D43300CBD961 /* birthday.png in Resources */,
 				22F40BA61DAF933B00AD4EA9 /* Speech.png in Resources */,
+				22D478B91DB0D43300CBD961 /* meeting.png in Resources */,
 				22DD7B421DA6357000BA3A66 /* DrinkWaterCell.xib in Resources */,
 				22F40BA81DAF94FE00AD4EA9 /* native.png in Resources */,
 				22C7BA421DA52AFB00BBECF0 /* ReminderListCell.xib in Resources */,
 				22CD30B61DA7AA6500C14226 /* messageCell.xib in Resources */,
+				22FA837E1DB4CF0A004590D2 /* FlatDatePicker-Icon-Check@2x.png in Resources */,
+				22D478BB1DB0D43300CBD961 /* wakeup.png in Resources */,
 				22F40BA41DAF8A5500AD4EA9 /* ToDoList.xib in Resources */,
+				22D478B61DB0D43300CBD961 /* call.png in Resources */,
+				22D478B81DB0D43300CBD961 /* medicine.png in Resources */,
+				22FA837F1DB4CF0A004590D2 /* FlatDatePicker-Icon-Close@2x.png in Resources */,
 				22DD7B311DA633CF00BA3A66 /* wakeUpCell.xib in Resources */,
 				22C7BA061DA5263500BBECF0 /* Main.storyboard in Resources */,
 				22C7BA471DA52CD500BBECF0 /* remindersDataCell.xib in Resources */,
 				22DD7B361DA633F000BA3A66 /* meetingCell.xib in Resources */,
+				22D478BA1DB0D43300CBD961 /* todolist.png in Resources */,
 				22DD7B3D1DA6355900BA3A66 /* takeMedicineCell.xib in Resources */,
 				22C7BA3A1DA528F200BBECF0 /* BirthdayCell.xib in Resources */,
 			);
@@ -516,6 +578,7 @@
 				22C7BA001DA5263500BBECF0 /* AppDelegate.m in Sources */,
 				22DD7B411DA6357000BA3A66 /* DrinkWaterCell.m in Sources */,
 				22C7BA341DA528DD00BBECF0 /* callCell.m in Sources */,
+				22FA83771DB4CD21004590D2 /* RMViewController.m in Sources */,
 				22F40BA31DAF8A5500AD4EA9 /* ToDoList.m in Sources */,
 				22CD30B51DA7AA6500C14226 /* messageCell.m in Sources */,
 				22C7BA411DA52AFB00BBECF0 /* ReminderListCell.m in Sources */,
@@ -523,6 +586,7 @@
 				22C7B9FD1DA5263500BBECF0 /* main.m in Sources */,
 				22DD7B351DA633F000BA3A66 /* meetingCell.m in Sources */,
 				22C7BA301DA5273D00BBECF0 /* RemindersController.m in Sources */,
+				22FA83741DB4BED0004590D2 /* FlatDatePicker.m in Sources */,
 				22C7BA461DA52CD500BBECF0 /* remindersDataCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

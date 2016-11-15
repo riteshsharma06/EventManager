@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "THDatePickerViewController.h"
 
-@interface BirthdayCell : UITableViewCell<THDatePickerDelegate,UITextFieldDelegate>
+@interface BirthdayCell : UITableViewCell<THDatePickerDelegate,UITextFieldDelegate> {
+    BOOL error;
+}
 @property (nonatomic, retain) NSDate * curDate;
 
 @property (nonatomic, retain) NSDate * curTimeDate;
@@ -27,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *TimeButton;
 - (IBAction)timeButton:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *SendLabel;
 
 - (IBAction)sendButton:(id)sender;
 @end

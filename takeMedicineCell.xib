@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,44 +15,96 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="221"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiD-Dg-fEw">
-                        <rect key="frame" x="16" y="49" width="290" height="30"/>
-                        <state key="normal" title="Date"/>
-                        <connections>
-                            <action selector="touchedButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ffs-8d-p7m"/>
-                        </connections>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sd2-CM-Mao">
-                        <rect key="frame" x="16" y="93" width="290" height="30"/>
-                        <state key="normal" title="Time"/>
-                        <connections>
-                            <action selector="timeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="P8w-dc-O9X"/>
-                        </connections>
-                    </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medicine Reminder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzl-fK-QSq">
-                        <rect key="frame" x="15" y="8" width="290" height="28"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Medicine Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJc-I2-yoY">
-                        <rect key="frame" x="15" y="138" width="290" height="30"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWQ-gi-sEj">
-                        <rect key="frame" x="206" y="183" width="76" height="30"/>
-                        <state key="normal" title="Send"/>
-                        <connections>
-                            <action selector="sendButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p4l-WB-386"/>
-                        </connections>
-                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxX-Cb-9NC">
+                        <rect key="frame" x="16" y="8" width="284" height="198"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medicine Reminder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzl-fK-QSq">
+                                <rect key="frame" x="8" y="0.0" width="268" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="HIi-Iw-oA8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiD-Dg-fEw">
+                                <rect key="frame" x="16" y="36" width="253" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Rwl-qS-syo"/>
+                                </constraints>
+                                <state key="normal" title="Date">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchedButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ffs-8d-p7m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sd2-CM-Mao">
+                                <rect key="frame" x="16" y="76" width="253" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="2Zt-3n-imt"/>
+                                </constraints>
+                                <state key="normal" title="Time">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="timeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="P8w-dc-O9X"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Medicine Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJc-I2-yoY">
+                                <rect key="frame" x="16" y="118" width="253" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="JT4-wc-GlS"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWQ-gi-sEj">
+                                <rect key="frame" x="178" y="157" width="76" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="5T7-za-svt"/>
+                                </constraints>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p4l-WB-386"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56862745098039214" green="0.0" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sd2-CM-Mao" firstAttribute="trailing" secondItem="uJc-I2-yoY" secondAttribute="trailing" id="A3L-Ql-BLd"/>
+                            <constraint firstItem="WiD-Dg-fEw" firstAttribute="leading" secondItem="sd2-CM-Mao" secondAttribute="leading" id="DRJ-fN-WSy"/>
+                            <constraint firstItem="WiD-Dg-fEw" firstAttribute="trailing" secondItem="sd2-CM-Mao" secondAttribute="trailing" id="FOl-Ku-3GI"/>
+                            <constraint firstItem="WiD-Dg-fEw" firstAttribute="top" secondItem="nzl-fK-QSq" secondAttribute="bottom" constant="8" symbolic="YES" id="KOI-fP-3Ip"/>
+                            <constraint firstItem="nzl-fK-QSq" firstAttribute="centerX" secondItem="WiD-Dg-fEw" secondAttribute="centerX" id="QEK-h9-0Gw"/>
+                            <constraint firstItem="XWQ-gi-sEj" firstAttribute="top" secondItem="uJc-I2-yoY" secondAttribute="bottom" constant="14" id="RfG-1Q-aXK"/>
+                            <constraint firstAttribute="trailing" secondItem="XWQ-gi-sEj" secondAttribute="trailing" constant="30" id="Wsf-XG-0lL"/>
+                            <constraint firstItem="sd2-CM-Mao" firstAttribute="leading" secondItem="uJc-I2-yoY" secondAttribute="leading" id="Wvi-8w-W7V"/>
+                            <constraint firstItem="nzl-fK-QSq" firstAttribute="top" secondItem="mxX-Cb-9NC" secondAttribute="top" id="a4g-8B-cVy"/>
+                            <constraint firstItem="nzl-fK-QSq" firstAttribute="leading" secondItem="mxX-Cb-9NC" secondAttribute="leadingMargin" id="b0k-QX-5jm"/>
+                            <constraint firstItem="sd2-CM-Mao" firstAttribute="top" secondItem="WiD-Dg-fEw" secondAttribute="bottom" constant="15" id="guy-yj-lBb"/>
+                            <constraint firstItem="uJc-I2-yoY" firstAttribute="top" secondItem="sd2-CM-Mao" secondAttribute="bottom" constant="17" id="nKi-HY-WQd"/>
+                            <constraint firstItem="WiD-Dg-fEw" firstAttribute="leading" secondItem="mxX-Cb-9NC" secondAttribute="leading" constant="16" id="pHR-W5-z7x"/>
+                            <constraint firstItem="nzl-fK-QSq" firstAttribute="trailing" secondItem="mxX-Cb-9NC" secondAttribute="trailingMargin" id="xx1-da-UxW"/>
+                        </constraints>
+                    </view>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="mxX-Cb-9NC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="1e3-Ik-DXe"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mxX-Cb-9NC" secondAttribute="bottom" constant="7" id="DyB-eu-mIR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mxX-Cb-9NC" secondAttribute="trailing" constant="12" id="FlB-n0-ZA7"/>
+                    <constraint firstItem="mxX-Cb-9NC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="cWs-ae-z6h"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="TimeButton" destination="sd2-CM-Mao" id="y9y-Zs-XDT"/>
                 <outlet property="dateButton" destination="WiD-Dg-fEw" id="KtC-Jm-Xmd"/>
                 <outlet property="nameField" destination="uJc-I2-yoY" id="ouc-lt-UDa"/>
+                <outlet property="sendLabel" destination="XWQ-gi-sEj" id="0yN-uw-yKY"/>
+                <outlet property="viewNew" destination="mxX-Cb-9NC" id="tNz-HE-rRX"/>
             </connections>
             <point key="canvasLocation" x="565" y="554"/>
         </tableViewCell>

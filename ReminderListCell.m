@@ -23,6 +23,10 @@
         
     
     self.table.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    
+    
+    arrLogo = [[NSMutableArray alloc] initWithObjects:@"call.png",@"birthday.png",@"meeting.png",@"wakeup.png",@"drinkwater.png",@"medicine.png",@"todolist.png", nil];
+    
     arrList = [[NSMutableArray alloc] initWithObjects:@"Call",
                @"Birthday",
                @"Meeting",
@@ -31,8 +35,17 @@
                @"Take Medicine",
                @"To do List", nil];
     
-//    [self.table.layer setBorderColor:[UIColor blueColor].CGColor];
-//    [self.table.layer setBorderWidth:1.0f];
+    
+   
+    
+    // border radius
+    [self.myView.layer setCornerRadius:30.0f];
+    [self.myView.layer setShadowColor:[UIColor blackColor].CGColor];
+    [self.myView.layer setShadowOpacity:0.8];
+    [self.myView.layer setShadowRadius:3.0];
+    [self.myView.layer setShadowOffset:CGSizeMake(2.0, 2.0)];
+    [self.myView.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [self.myView.layer setBorderWidth:1.0f];
     
     // Initialization code
 }
@@ -55,6 +68,9 @@
     remindersDataCell *cell = [self.table dequeueReusableCellWithIdentifier:@"idReminderData"];
     
         cell.Name.text = [NSString stringWithFormat:@"%@",[arrList objectAtIndex:indexPath.row]];
+    
+    
+        cell.ImgLogo.image = [UIImage imageNamed:[arrLogo objectAtIndex:indexPath.row]];
 //    [cell.contentView.layer setBorderColor:[UIColor blueColor].CGColor];
 //    [cell.contentView.layer setBorderWidth:1.0f];
     return cell;

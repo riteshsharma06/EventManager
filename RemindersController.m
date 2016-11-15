@@ -22,9 +22,11 @@
 #import "DrinkWaterCell.h"
 #import "ToDoList.h"
 
+#import "FlatDatePicker.h"
 
 
-@interface RemindersController ()<UIActionSheetDelegate>
+
+@interface RemindersController ()<UIActionSheetDelegate,FlatDatePickerDelegate>
 {
     UINib *reminderNIB ;
     
@@ -51,15 +53,34 @@
     
     
     BOOL isSendClicked;
+    
+    
+    
+    NSMutableArray *arrMessageData;
+    
+    NSString *strMessage;
+    
     //ReminderClicked
 }
-
+@property (nonatomic, strong) FlatDatePicker *flatDatePicker;
 @end
 
 @implementation RemindersController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    arrMessageData = [[NSMutableArray alloc] init];
+    [arrMessageData addObject:@"Welcome to Reminders"];
+    [arrMessageData addObject:@"Feel free to set reminders of your choice"];
+    
+    
+    [[NSUserDefaults standardUserDefaults] setObject:arrMessageData forKey:@"messages"];
+    
+    arrMessageData = [[NSUserDefaults standardUserDefaults] objectForKey:@"messages"];
+    
+    
     
     isSendClicked = NO;
     
@@ -117,7 +138,7 @@
     
     
     
-    rowsNumbers = 1;
+    rowsNumbers = [arrMessageData count] + 1;
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -168,6 +189,18 @@
                                              selector:@selector(drinkwater:)
      
                                                  name:@"DrinkWater" object:nil];
+    
+    
+    
+    
+    //flate date picker
+    self.flatDatePicker = [[FlatDatePicker alloc] initWithParentView:self.view.superview];
+    
+    self.flatDatePicker.delegate = self;
+    self.flatDatePicker.title = @"Select your birthday";
+    //self.flatDatePicker.datePickerMode = FlatDatePickerModeTime;
+    self.flatDatePicker.datePickerMode = FlatDatePickerModeDate;
+  //  [[[UIApplication sharedApplication] keyWindow] addSubview:_flatDatePicker];
     
     
 }
@@ -291,10 +324,12 @@
     isSendClicked = NO;
      NSDictionary *userInfo = note.userInfo;
     
+     arrMessageData = [[NSUserDefaults standardUserDefaults] objectForKey:@"messages"];
+    
     name = [NSString stringWithFormat:@"%@",[userInfo objectForKey:@"Reminder"]];
     
-    
-    rowsNumbers = 2;
+    rowsNumbers = [arrMessageData count];
+    rowsNumbers = rowsNumbers + 2;
     [self.tableV reloadData];
     
     
@@ -330,7 +365,21 @@
 //    @"Take Medicine",
 //    @"To do List",
     
-    if(indexPath.row == 0)
+    
+    
+    if(indexPath.row < [arrMessageData count])
+    {
+        messageCell *cell = [self.tableV dequeueReusableCellWithIdentifier:@"idMessage" forIndexPath:indexPath];
+        if (!cell) {
+            cell = [[messageCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"idMessage"];
+        }
+        
+        
+        cell.textFinal.text = [arrMessageData objectAtIndex:indexPath.row];
+        
+        return cell;
+    }
+    else if(indexPath.row == [arrMessageData count])
     {
         ReminderListCell *cell = [self.tableV dequeueReusableCellWithIdentifier:@"idReminder" forIndexPath:indexPath];
         if (!cell) {
@@ -340,7 +389,7 @@
 //        [cell.contentView.layer setBorderWidth:1.0f];
         return cell;
     }
-    else if(indexPath.row == 1)
+    else if(indexPath.row == [arrMessageData count] + 1)
     {
         if(!isSendClicked)
         {
@@ -376,8 +425,8 @@
                 if (!cell) {
                     cell = [[meetingCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"idMeeting"];
                 }
-                [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
-                [cell.contentView.layer setBorderWidth:1.0f];
+//                [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
+//                [cell.contentView.layer setBorderWidth:1.0f];
                 return cell;
             }
             else if([name isEqualToString:@"Wake Up"])
@@ -387,8 +436,8 @@
                 if (!cell) {
                     cell = [[wakeUpCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"idWakeUp"];
                 }
-                [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
-                [cell.contentView.layer setBorderWidth:1.0f];
+//                [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
+//                [cell.contentView.layer setBorderWidth:1.0f];
                 return cell;
                 
             }
@@ -399,8 +448,8 @@
                 if (!cell) {
                     cell = [[DrinkWaterCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"idDrinkwater"];
                 }
-                [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
-                [cell.contentView.layer setBorderWidth:1.0f];
+//                [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
+//                [cell.contentView.layer setBorderWidth:1.0f];
                 return cell;
                 
             }
@@ -411,8 +460,8 @@
                 if (!cell) {
                     cell = [[takeMedicineCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"idMedicine"];
                 }
-                [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
-                [cell.contentView.layer setBorderWidth:1.0f];
+//                [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
+//                [cell.contentView.layer setBorderWidth:1.0f];
                 return cell;
                 
             }
@@ -424,8 +473,8 @@
                 if (!cell) {
                     cell = [[ToDoList alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"idTodo"];
                 }
-                [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
-                [cell.contentView.layer setBorderWidth:1.0f];
+//                [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
+//                [cell.contentView.layer setBorderWidth:1.0f];
                 return cell;
                 
                 
@@ -492,6 +541,9 @@
             
 //            [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
 //            [cell.contentView.layer setBorderWidth:1.0f];
+            
+            strMessage =cell.textFinal.text;
+            
             
             return cell;
             
@@ -566,25 +618,32 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    int height1;
+    int height1 = 0;
     
-    if(indexPath.row == 0)
+    
+    if(indexPath.row < [arrMessageData count])
     {
-          height1 = 433;
+        height1 = 100;
+
     }
-    else if(indexPath.row == 1)
+    
+    if(indexPath.row == [arrMessageData count])
+    {
+          height1 = 300;
+    }
+    else if(indexPath.row == [arrMessageData count] + 1)
     {
         if(!isSendClicked)
         {
         
             if([name isEqualToString:@"Birthday"])
             {
-                height1 = 263;
+                height1 = 204;
             }
             else if([name isEqualToString:@"Call"])
             {
                 //callCell
-                height1 = 250;
+                height1 = 200;
                 
             }
             else if([name isEqualToString:@"Meeting"])
@@ -638,7 +697,8 @@
 -(void)callCalender:(NSNotification *)note
 {
     
-    [self setDatePicker];
+   // [self setDatePicker];
+    [self flatedatePicker];
 }
 
 
@@ -659,10 +719,93 @@
     isSendClicked = YES;
     
     NSLog(@"send button clicker");
-    rowsNumbers = 2;
+   
+    
+    NSMutableArray *arrTemp = [[NSMutableArray alloc] init];
+    for(id object in arrMessageData)
+    {
+        [arrTemp addObject:object];
+    }
+    
+    NSString *strTemp =[self getMessageText];
+    
+    [arrTemp addObject:strTemp];
+    [[NSUserDefaults standardUserDefaults] setObject:arrTemp forKey:@"messages"];
+    
+     arrMessageData = [[NSUserDefaults standardUserDefaults] objectForKey:@"messages"];
+     rowsNumbers = [arrMessageData count] + 1;
+    
     [self.tableV reloadData];
     
+    
 }
+
+
+#pragma mark Flat date picker
+
+-(void)flatedatePicker
+{
+
+    [self.flatDatePicker show];
+    
+}
+
+#pragma mark
+
+
+#pragma flate date picker delegate methods
+
+#pragma mark - FlatDatePicker Delegate
+
+- (void)flatDatePicker:(FlatDatePicker*)datePicker dateDidChange:(NSDate*)date {
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
+    
+    if (datePicker.datePickerMode == FlatDatePickerModeDate) {
+        [dateFormatter setDateFormat:@"dd MMMM yyyy"];
+    } else if (datePicker.datePickerMode == FlatDatePickerModeTime) {
+        [dateFormatter setDateFormat:@"HH:mm:ss"];
+    } else {
+        [dateFormatter setDateFormat:@"dd MMMM yyyy HH:mm:ss"];
+    }
+    
+  
+    
+   
+}
+
+- (void)flatDatePicker:(FlatDatePicker*)datePicker didCancel:(UIButton*)sender {
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"FlatDatePicker" message:@"Did cancelled !" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+- (void)flatDatePicker:(FlatDatePicker*)datePicker didValid:(UIButton*)sender date:(NSDate*)date {
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
+    
+    if (datePicker.datePickerMode == FlatDatePickerModeDate) {
+        [dateFormatter setDateFormat:@"dd MMMM yyyy"];
+    } else if (datePicker.datePickerMode == FlatDatePickerModeTime) {
+        [dateFormatter setDateFormat:@"HH:mm:ss"];
+    } else {
+        [dateFormatter setDateFormat:@"dd MMMM yyyy HH:mm:ss"];
+    }
+    
+    NSString *value = [dateFormatter stringFromDate:date];
+    
+    
+    NSString *message = [NSString stringWithFormat:@"Did valid date : %@", value];
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"FlatDatePicker" message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+
+#pragma mark
+
 
 
 //-(void)setFinalReminder
@@ -672,62 +815,62 @@
 //    
 //}
 
-
--(void)setDatePicker
-{
-    if(!self.datePicker)
-        self.datePicker = [THDatePickerViewController datePicker];
-    self.datePicker.date = self.curDate;
-    self.datePicker.delegate = self;
-    [self.datePicker setAllowClearDate:NO];
-    [self.datePicker setClearAsToday:YES];
-    [self.datePicker setAutoCloseOnSelectDate:NO];
-    [self.datePicker setAllowSelectionOfSelectedDate:YES];
-    [self.datePicker setDisableYearSwitch:YES];
-    //[self.datePicker setDisableFutureSelection:NO];
-    [self.datePicker setDaysInHistorySelection:12];
-    [self.datePicker setDaysInFutureSelection:0];
-    //    [self.datePicker setAllowMultiDaySelection:YES];
-    //    [self.datePicker setDateTimeZoneWithName:@"UTC"];
-    //[self.datePicker setAutoCloseCancelDelay:5.0];
-    [self.datePicker setSelectedBackgroundColor:[UIColor colorWithRed:125/255.0 green:208/255.0 blue:0/255.0 alpha:1.0]];
-    [self.datePicker setCurrentDateColor:[UIColor colorWithRed:242/255.0 green:121/255.0 blue:53/255.0 alpha:1.0]];
-    [self.datePicker setCurrentDateColorSelected:[UIColor yellowColor]];
-    
-    [self.datePicker setDateHasItemsCallback:^BOOL(NSDate *date) {
-        int tmp = (arc4random() % 30)+1;
-        return (tmp % 5 == 0);
-    }];
-    //[self.datePicker slideUpInView:self.view withModalColor:[UIColor lightGrayColor]];
-    [self presentSemiViewController:self.datePicker withOptions:@{
-                                                                  KNSemiModalOptionKeys.pushParentBack    : @(NO),
-                                                                  KNSemiModalOptionKeys.animationDuration : @(0.2),
-                                                                  KNSemiModalOptionKeys.shadowOpacity     : @(0.3),
-                                                                  }];
-}
+//
+//-(void)setDatePicker
+//{
+//    if(!self.datePicker)
+//        self.datePicker = [THDatePickerViewController datePicker];
+//    self.datePicker.date = self.curDate;
+//    self.datePicker.delegate = self;
+//    [self.datePicker setAllowClearDate:NO];
+//    [self.datePicker setClearAsToday:YES];
+//    [self.datePicker setAutoCloseOnSelectDate:NO];
+//    [self.datePicker setAllowSelectionOfSelectedDate:YES];
+//    [self.datePicker setDisableYearSwitch:YES];
+//    //[self.datePicker setDisableFutureSelection:NO];
+//    [self.datePicker setDaysInHistorySelection:12];
+//    [self.datePicker setDaysInFutureSelection:0];
+//    //    [self.datePicker setAllowMultiDaySelection:YES];
+//    //    [self.datePicker setDateTimeZoneWithName:@"UTC"];
+//    //[self.datePicker setAutoCloseCancelDelay:5.0];
+//    [self.datePicker setSelectedBackgroundColor:[UIColor colorWithRed:125/255.0 green:208/255.0 blue:0/255.0 alpha:1.0]];
+//    [self.datePicker setCurrentDateColor:[UIColor colorWithRed:242/255.0 green:121/255.0 blue:53/255.0 alpha:1.0]];
+//    [self.datePicker setCurrentDateColorSelected:[UIColor yellowColor]];
+//    
+//    [self.datePicker setDateHasItemsCallback:^BOOL(NSDate *date) {
+//        int tmp = (arc4random() % 30)+1;
+//        return (tmp % 5 == 0);
+//    }];
+//    //[self.datePicker slideUpInView:self.view withModalColor:[UIColor lightGrayColor]];
+//    [self presentSemiViewController:self.datePicker withOptions:@{
+//                                                                  KNSemiModalOptionKeys.pushParentBack    : @(NO),
+//                                                                  KNSemiModalOptionKeys.animationDuration : @(0.2),
+//                                                                  KNSemiModalOptionKeys.shadowOpacity     : @(0.3),
+//                                                                  }];
+//}
 
 #pragma mark - THDatePickerDelegate
 
-- (void)datePickerDonePressed:(THDatePickerViewController *)datePicker {
-    self.curDate = datePicker.date;
-    [self refreshTitle];
-    
-    NSDictionary *dict = [NSDictionary dictionaryWithObject:datePicker.date forKey:@"date"];
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName: @"getDate" object:nil userInfo:dict];
-    
-    [[NSUserDefaults standardUserDefaults] setObject:self.curDate forKey:@"date"];
-    
-    [self dismissSemiModalView];
-}
-
-- (void)datePickerCancelPressed:(THDatePickerViewController *)datePicker {
-    [self dismissSemiModalView];
-}
-
-- (void)datePicker:(THDatePickerViewController *)datePicker selectedDate:(NSDate *)selectedDate {
-    NSLog(@"Date selected: %@",[_formatter stringFromDate:selectedDate]);
-}
+//- (void)datePickerDonePressed:(THDatePickerViewController *)datePicker {
+//    self.curDate = datePicker.date;
+//    [self refreshTitle];
+//    
+//    NSDictionary *dict = [NSDictionary dictionaryWithObject:datePicker.date forKey:@"date"];
+//    
+//    [[NSNotificationCenter defaultCenter] postNotificationName: @"getDate" object:nil userInfo:dict];
+//    
+//    [[NSUserDefaults standardUserDefaults] setObject:self.curDate forKey:@"date"];
+//    
+//    [self dismissSemiModalView];
+//}
+//
+//- (void)datePickerCancelPressed:(THDatePickerViewController *)datePicker {
+//    [self dismissSemiModalView];
+//}
+//
+//- (void)datePicker:(THDatePickerViewController *)datePicker selectedDate:(NSDate *)selectedDate {
+//    NSLog(@"Date selected: %@",[_formatter stringFromDate:selectedDate]);
+//}
 
 
 
@@ -790,7 +933,68 @@
 }
 
 
+
+
+
 #pragma mark end
+
+-(NSString *)getMessageText
+{
+    if([name isEqualToString:@"Birthday"])
+    {
+        strMessage = [NSString stringWithFormat:@"You have set reminder for %@\n with following details\n Name:%@\n Date:%@ \n Time:%@ \n ",name,[[NSUserDefaults standardUserDefaults] objectForKey:@"name"],[[NSUserDefaults standardUserDefaults] objectForKey:@"date"],[[NSUserDefaults standardUserDefaults] objectForKey:@"time"]];
+    }
+    else if([name isEqualToString:@"Call"])
+    {
+        //callCell
+        strMessage = [NSString stringWithFormat:@"You have set reminder for %@\n with following details\n Name:%@\n Date:%@ \n Time:%@ \n ",name,[[NSUserDefaults standardUserDefaults] objectForKey:@"name"],[[NSUserDefaults standardUserDefaults] objectForKey:@"date"],[[NSUserDefaults standardUserDefaults] objectForKey:@"time"]];
+        
+        
+    }
+    else if([name isEqualToString:@"Meeting"])
+    {
+        //meetingCell
+        
+        strMessage = [NSString stringWithFormat:@"You have set reminder for %@\n with following details\n Name:%@\n Date:%@ \n Time:%@ \n Venue:%@ ",name,[[NSUserDefaults standardUserDefaults] objectForKey:@"name"],[[NSUserDefaults standardUserDefaults] objectForKey:@"date"],[[NSUserDefaults standardUserDefaults] objectForKey:@"time"],[[NSUserDefaults standardUserDefaults] objectForKey:@"venue"]];
+        
+        
+    }
+    else if([name isEqualToString:@"Wake Up"])
+    {
+        
+        //wakeUpCell
+        strMessage = [NSString stringWithFormat:@"You have set reminder for %@\n with following details\n  Date:%@ \n Time:%@ \n ",name,[[NSUserDefaults standardUserDefaults] objectForKey:@"date"],[[NSUserDefaults standardUserDefaults] objectForKey:@"time"]];
+        
+        
+    }
+    else if([name isEqualToString:@"Drink Water"])
+    {
+        //Drink water
+        strMessage = [NSString stringWithFormat:@"You have set reminder for %@\n in Every:%@",name,[[NSUserDefaults standardUserDefaults] objectForKey:@"drink"]];
+        
+    }
+    else if([name isEqualToString:@"Take Medicine"])
+    {
+        //take medicine
+        strMessage = [NSString stringWithFormat:@"You have set reminder for %@\n with following details\n Name:%@\n Date:%@ \n Time:%@ \n ",name,[[NSUserDefaults standardUserDefaults] objectForKey:@"name"],[[NSUserDefaults standardUserDefaults] objectForKey:@"date"],[[NSUserDefaults standardUserDefaults] objectForKey:@"time"]];
+        
+    }
+    else if ([name isEqualToString:@"To do List"])
+    {
+        // to do task
+       strMessage = [NSString stringWithFormat:@"You have set reminder for %@\n with following details\n Name:%@\n Date:%@ \n Time:%@ \n ",name,[[NSUserDefaults standardUserDefaults] objectForKey:@"name"],[[NSUserDefaults standardUserDefaults] objectForKey:@"date"],[[NSUserDefaults standardUserDefaults] objectForKey:@"time"]];
+        
+    }
+    
+    
+    
+    //            [cell.contentView.layer setBorderColor:[UIColor redColor].CGColor];
+    //            [cell.contentView.layer setBorderWidth:1.0f];
+    
+    return strMessage;
+    
+
+}
 
 
 

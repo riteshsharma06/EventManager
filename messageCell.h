@@ -10,4 +10,5 @@
 
 @interface messageCell : UITableViewCell
 @property(nonatomic,weak)IBOutlet UITextView *textFinal;
+@property (weak, nonatomic) IBOutlet UIView *viewNew;
 @end

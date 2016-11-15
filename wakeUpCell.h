@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface wakeUpCell : UITableViewCell
+@interface wakeUpCell : UITableViewCell {
+    BOOL error;
+}
 @property (nonatomic, retain) NSDate * curDate;
 @property (nonatomic, retain) NSDateFormatter * formatter;
 - (IBAction)touchedButton:(id)sender;
@@ -19,4 +21,6 @@
 @property (nonatomic, retain) NSDateFormatter * timeFormatter;
 @property (weak, nonatomic) IBOutlet UIButton *TimeButton;
 - (IBAction)timeButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *viewNew;
+@property (weak, nonatomic) IBOutlet UIButton *sendLable;
 @end
